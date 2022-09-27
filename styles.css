@@ -27,7 +27,7 @@
 
 
 body{
-    font-size: 12px;
+    font-size: 1rem;
     font-family: 'Kumbh Sans', sans-serif;
     color: var(--Very-dark-grayish-blue);
     display: flex;
@@ -36,7 +36,6 @@ body{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-
     background: no-repeat linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
@@ -44,11 +43,21 @@ body{
 main{
     background-color: #fff;
     border-radius: 20px;
-    padding: 1.5em;
-    margin: 0 2em;
-    min-width: 375px;
+    padding: 1.25em;
+    margin: 0 1.5em;
+    max-width: 375px;
 }
-
+.images{
+    margin-top: -135px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.images img{
+    width: 75%;
+}
+.images img:last-of-type{
+    margin-top: -220px;
+}
 article{
     display: flex;
     justify-content: space-between;
