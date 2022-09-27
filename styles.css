@@ -1,0 +1,92 @@
+:root{
+/* ## Colors */
+
+/* #### Text */
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+
+/* Background gradient */
+--Soft-violet: hsl(273, 75%, 66%);
+--Soft-blue: hsl(240, 73%, 65%);
+
+/* ### Neutral Text*/
+--Very-dark-grayish-blue: hsl(237, 12%, 33%);
+--Dark-grayish-blue: hsl(240, 6%, 50%);
+
+/* #### Dividers */
+--Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--Very-dark-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    background: no-repeat linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+/* LAYOUT */
+main{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1.5em;
+    margin: 0 2em;
+    min-width: 375px;
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 1em 0;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+}
+article img{
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: 2em;
+}
+
+/* TYPOGRAPHY */
+h1{
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+}
+
+article p:first-of-type{
+    margin-bottom: .5em;
+}
+
+/* UTILITY */
+.displayBlock{
+    display: block;
+}
+.displayNone{
+    display: none;
+}
+
+.bold{
+    font-weight: 700;
+}
+.standardTxt{
+    font-weight: 400;
+}
+.rotateEl{
+    transform: rotate(180deg);
+}

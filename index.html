@@ -3,38 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com"   crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center;color: aliceblue; }
+    .attribution a { color: hsl(0, 0%, 95%); }
   </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main>
+    <h1>FAQ</h1>
+  
+    <article>
+      <div>
+        <p id="q1" class="standardTxt">How many team members can I invite?</p>
+        <p id="a1" class="displayNone">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+      </div>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down icon">
+    </article>
+  
+    <article>
+      <div>
+        <p id="q2" class="standardTxt">What is the maximum file upload size?</p>
+        <p id="a2" class="displayNone">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </div>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down icon">
+    </article>
+  
+    <article>
+      <div>
+        <p id="q3" class="standardTxt">How do I reset my password?</p>
+        <p id="a3" class="displayNone">Click “Forgot password” from the login page or “Change password” from your profile page.<br>
+        A reset link will be emailed to you.</p>
+      </div>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down icon">
+    </article>
+  
+    <article>
+      <div>
+        <p id="q4" class="standardTxt">Can I cancel my subscription?</p>
+        <p id="a4" class="displayNone">Yes! Send us a message and we'll process your request no questions asked.</p>
+      </div>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down icon">
+    </article>
+  
+    <article>
+      <div>
+        <p id="q5" class="standardTxt">Do you provide additional support?</p>
+        <p id="a5" class="displayNone">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </div>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down icon">
+    </article>
+  </main>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://alanacapcreates.com">AlanaCapCreates</a>.
+  </footer>
+
+  <script src="./index.js"></script>
 </body>
 </html>
